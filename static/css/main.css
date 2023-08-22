@@ -1,6 +1,7 @@
 :root {
   --lb: #4deeea;
-  --g: #74ee15;
+/*   --g: #74ee15; */
+	--g: #00ff00;
   --y: #ffe700;
   --p: #f000ff;
   --db: #001eff;
@@ -14,12 +15,17 @@ body {
   margin: 0;
   padding-top: 8px;
   padding-bottom: -1px;
-  /* font-family: 'Courier New', monospace; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: rgb(250,150,10);
-  background-image: -moz-element(#japanese);
-  background-repeat: repeat-y;
+  font-family: monospace;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; */
+/*   background-color: rgb(250,150,10); */
+  /* background-image: element(#japanese); */
+  /* background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100%' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ctext x='100' y='40' width='100%' height='100%' font-family='monospace' fill='white'%3eアグラワル アルマン अरमान अग्रवाल%3c/text%3e%3c/svg%3e");
+  background-size: 100% 40px, 40px 100%;
+  background-repeat: repeat; */
+  /* background-repeat: repeat-y, repeat-x; */
   background-position: center;
+  color: var(--g);
+  background-color: black;
 }
 
 .header {
@@ -27,12 +33,25 @@ body {
   align-items: center;
   /* align-items: flex-end; */
   justify-content: center;
-  height: 25vh;
   overflow: hidden;
   text-align: center;
   /* padding: 16px; */
   /* color: var(--g); */
-  font-size: 74px;
+  font-size: 10px;
+}
+
+@media only screen and (min-width: 500px) {
+  .header {
+    height: 20vh;
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  .header {
+    height: 10vh;
+    font-size: 30px;
+  }
 }
 
 .hide {
@@ -99,11 +118,49 @@ h1 {
 
 #japanese {
   /* color: var(--y); */
-  font-size: 5vw;
+  font-size: 20px;
 }
 
 #white {
-  color: white;
+  /* color: white; */
+  color: var(--g);
   /* transform: translateY(50vh); */
-  position: relative;
+  /* position: relative; */
 }
+
+.header h1::after {
+  content: "_";
+  width: 5px;
+  height: 20px;
+  animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+#welcome {
+  display: inline-block;
+  width: 0;
+}
+
+/* .typewriter {
+  display: block;
+  overflow: hidden;
+  border-right: 0.15em solid #FFF;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #FFF; } /* Adjust the color as needed */
+} */
