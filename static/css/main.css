@@ -28,6 +28,8 @@ body {
   background-color: black;
 }
 
+a { color: inherit; } 
+
 .header {
   display: flex;
   align-items: center;
@@ -145,22 +147,3 @@ h1 {
   display: inline-block;
   width: 0;
 }
-
-/* .typewriter {
-  display: block;
-  overflow: hidden;
-  border-right: 0.15em solid #FFF;
-  white-space: nowrap;
-  letter-spacing: 0.15em;
-  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #FFF; } /* Adjust the color as needed */
-} */
