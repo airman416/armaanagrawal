@@ -22,7 +22,7 @@ body {
   background-position: center;
 }
 
-.header {
+.footer {
   display: flex;
   align-items: center;
   /* align-items: flex-end; */

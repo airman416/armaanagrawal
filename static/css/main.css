@@ -1,101 +1,104 @@
 :root {
-  --lb: #4deeea;
-/*   --g: #74ee15; */
-	--g: #00ff00;
-  --y: #ffe700;
-  --p: #f000ff;
-  --db: #001eff;
+    --lb: #4deeea;
+    /*   --g: #74ee15; */
+    --g: #00ff00;
+    --y: #ffe700;
+    --p: #f000ff;
+    --db: #001eff;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding-top: 8px;
-  padding-bottom: -1px;
-  font-family: monospace;
-  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; */
-/*   background-color: rgb(250,150,10); */
-  /* background-image: element(#japanese); */
-  /* background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100%' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ctext x='100' y='40' width='100%' height='100%' font-family='monospace' fill='white'%3eアグラワル アルマン अरमान अग्रवाल%3c/text%3e%3c/svg%3e");
-  background-size: 100% 40px, 40px 100%;
-  background-repeat: repeat; */
-  /* background-repeat: repeat-y, repeat-x; */
-  background-position: center;
-  color: var(--g);
-  background-color: black;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: -1px;
+    font-family: monospace;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; */
+    /*   background-color: rgb(250,150,10); */
+    /* background-image: element(#japanese); */
+    /* background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100%' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ctext x='100' y='40' width='100%' height='100%' font-family='monospace' fill='white'%3eアグラワル アルマン अरमान अग्रवाल%3c/text%3e%3c/svg%3e");
+    background-size: 100% 40px, 40px 100%;
+    background-repeat: repeat; */
+    /* background-repeat: repeat-y, repeat-x; */
+    background-position: center;
+    color: var(--g);
+    background-color: black;
 }
 
-a { color: inherit; } 
+a {
+    color: inherit;
+}
 
-.header {
-  display: flex;
-  align-items: center;
-  /* align-items: flex-end; */
-  justify-content: center;
-  overflow: hidden;
-  text-align: center;
-  /* padding: 16px; */
-  /* color: var(--g); */
-  font-size: 10px;
+.footer {
+    display: flex;
+    align-items: center;
+    /* align-items: flex-end; */
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    /* padding: 16px; */
+    /* color: var(--g); */
+    font-size: 10px;
 }
 
 @media only screen and (min-width: 500px) {
-  .header {
-    height: 20vh;
-    font-size: 50px;
-  }
+    .footer {
+        height: 20vh;
+        font-size: 50px;
+    }
 }
 
 @media only screen and (min-width: 0px) {
-  .header {
-    height: 10vh;
-    font-size: 30px;
-  }
+    .footer {
+        height: 10vh;
+        font-size: 30px;
+    }
 }
 
 .hide {
-  height: 0px;
-  overflow: hidden;
+    height: 0px;
+    overflow: hidden;
 }
 
 .container {
- /* display: grid; */
-  align-items: center; 
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 5%;
-  display: flex;
-  justify-content: center;
+    /* display: grid; */
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5%;
+    display: flex;
+    justify-content: center;
 }
 
 .centered-text {
     text-align: center;
-    /* animation: scrollUp 5s linear infinite; /* Adjust duration and timing function as needed */ */
+    /* animation: scrollUp 5s linear infinite; /* Adjust duration and timing function as needed */
+    */
 }
 
 .row {
-  background-color: black;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 4px 4px;
+    background-color: black;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 4px 4px;
 }
 
 .column {
-  -ms-flex: 25%;
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
 }
 
 .square {
-  border: 0.5px solid black;
-  width: 100%;
-  max-width: 100%;
-  max-height:100%;
+    border: 0.5px solid black;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 @keyframes scrollUp {
@@ -108,42 +111,113 @@ a { color: inherit; }
 }
 
 img {
-  width: 100%;
-  max-width: 100%;
-  max-height:100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 h1 {
-  font-weight: bold;
-  text-align: center;
+    font-weight: bold;
+    text-align: center;
 }
 
 #japanese {
-  /* color: var(--y); */
-  font-size: 20px;
+    /* color: var(--y); */
+    font-size: 20px;
 }
 
 #white {
-  /* color: white; */
-  color: var(--g);
-  /* transform: translateY(50vh); */
-  /* position: relative; */
+    /* color: white; */
+    color: var(--g);
+    /* transform: translateY(50vh); */
+    /* position: relative; */
 }
 
-.header h1::after {
-  content: "_";
-  width: 5px;
-  height: 20px;
-  animation: cursor-blink 1.5s steps(2) infinite;
+.footer h1::after {
+    content: "_";
+    width: 5px;
+    height: 20px;
+    animation: cursor-blink 1.5s steps(2) infinite;
 }
 
 @keyframes cursor-blink {
-  0% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
 }
 
 #welcome {
-  display: inline-block;
-  width: 0;
+    display: inline-block;
+    width: 0;
+}
+
+.footer h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.footer a {
+    text-decoration: none; /* No underline by default */
+    color: inherit; /* Use the color of the surrounding text */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.about-me, .my-work {
+    padding: 20px;
+    margin: 20px;
+}
+
+.about-me .section, .my-work .section {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between;
+}
+
+
+.about-me img, .my-work img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption {
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+}
+
+.image-caption {
+    padding-right: 20px;
+    margin-bottom: 0; /* Remove any bottom margin if it's pushing the text down */
+}
+
+.section img {
+    /*max-width: 75%;*/
+    /*height: auto;*/
+    /*align-content: center;*/
+}
+
+.section {
+    max-width: 75%;
+    margin: auto;
+}
+
+.section .text {
+    max-width: 35%;
+    margin-top: 0; /* Ensure text starts at the top */
+}
+
+.text-right {
+    margin-left: 20px;
+}
+
+.text-left {
+    padding-right: 20px;
+}
+
+ul {
+  /*list-style-position: inside;*/
+  padding-left: 12px;
 }
